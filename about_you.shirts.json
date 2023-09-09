@@ -1,5 +1,4 @@
-[
-  {
+[{
   "_id": {
     "$oid": "64db6ab3846bb448f318416e"
   },
@@ -54,6 +53,9 @@
   ],
   "productUrl": "/fc-bayern-munchen/shirt-alessio-957651",
   "productsWithOtherColors": [
+    {
+      "$oid": "64db6ab3846bb448f318416e"
+    },
     {
       "$oid": "64db6ab3846bb448f318416f"
     }
@@ -112,10 +114,13 @@
     "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black6.avif",
     "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black7.avif"
   ],
-  "productUrl": "/fc-bayern-munchen/riza-alessio-9576597",
+  "productUrl": "/fc-bayern-munchen/shirt-alessio-9576597",
   "productsWithOtherColors": [
     {
       "$oid": "64db6ab3846bb448f318416e"
+    },
+    {
+      "$oid": "64db6ab3846bb448f318416f"
     }
   ]
 }]
