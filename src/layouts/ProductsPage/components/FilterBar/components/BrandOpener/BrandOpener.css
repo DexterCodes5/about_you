@@ -1,0 +1,66 @@
+.opener-body-brand-top {
+  padding: 16px 24px;
+}
+
+.opener-body-brand-searchbar {
+  display: flex;
+  position: relative;
+}
+
+.opener-body-brand-searchbar-input {
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+  padding: 15px 15px 15px 47px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.opener-body-brand-searchbar-input::placeholder {
+  color: rgb(155, 155, 155);
+}
+
+.opener-body-brand-searchbar-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.opener-body-brand-bottom {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+}
+
+.opener-body-brands {
+  margin-top: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc((100% - 8px) / 3), 1fr));
+}
+
+.opener-body-brand-btn {
+  padding: 0;
+  background-color: rgb(242, 242, 242);
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.opener-body-brand-img {
+  width: 80px;
+  height: 30px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.opener-body-brand-label {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}

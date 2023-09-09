@@ -1,0 +1,122 @@
+.product {
+  overflow: hidden;
+}
+
+.product-img-container {
+  background-color: rgb(244, 244, 245);
+  border-radius: 2px;
+  padding-top: 133.3%;
+  position: relative;
+}
+
+.product-img {
+  box-sizing: border-box;
+  position: absolute;
+  inset: 5%;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.product-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.product:hover .product-img-hover {
+  opacity: 1;
+}
+
+.product-info {
+  background-color: white;
+  padding: 16px 16px 24px;
+  transition: transform 300ms ease-in 100ms;
+}
+
+.product:hover > .product-info {
+  transform: translateY(-60px);
+}
+
+.product-brand {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+}
+
+.product-title {
+  color: rgb(155, 155, 155);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+}
+
+.product-price {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.product-colors-and-available-sizes {
+  position: relative;
+}
+
+.color__bubbles {
+  margin-top: 10px;
+  transition: opacity 300ms ease-in;
+}
+
+.product:hover .color__bubbles {
+  opacity: 0;
+}
+
+.color__bubble {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.product-available-sizes {
+  color: rgb(155, 155, 155);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 1.6;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.product:hover .product-available-sizes {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.product-add-to-basket-container {
+  position: relative;
+}
+
+.product-add-to-basket {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  padding: 16px 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 300ms ease-in 100ms;
+}
+
+.product:hover .product-add-to-basket {
+  opacity: 1;
+}

@@ -1,0 +1,295 @@
+.auth-modal-background {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 300ms ease-in-out 0ms 1 normal forwards running fadeEnter;
+}
+
+.auth-modal {
+  width: 620px;
+  max-height: calc(100% - 60px);
+  background-color: white;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.auth-modal-top {
+  padding: 24px 0;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.auth-modal-top-close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.auth-modal-sign-options {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-modal-sign-option {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 5px 24px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.auth-modal-sign-option-active {
+  border-color: black;
+}
+
+.auth-modal-form {
+  padding: 32px;
+}
+
+.auth-modal-sign-up-row {
+  display: flex;
+}
+
+.auth-modal-input-wrapper {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.auth-modal-input-wrapper:first-child {
+  margin-right: 16px;
+}
+
+.auth-modal-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 2px;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.auth-modal-input:hover {
+  border: 1px solid black;
+}
+
+.auth-modal-input:focus, .auth-modal-input:not(:placeholder-shown) {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.auth-modal-input-error {
+  border: 1px solid rgb(255, 90, 90);
+}
+
+.auth-modal-input-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(155, 155, 155);
+  font-weight: 500;
+  padding: 0 4px;
+  transform: translate(15px, 15px);
+  transition: transform 100ms ease 0s, color 100ms ease 0s, font-size 100ms ease 0s;
+  pointer-events: none;
+}
+
+.auth-modal-input:focus + .auth-modal-input-placeholder, .auth-modal-input:not(:placeholder-shown) + .auth-modal-input-placeholder {
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  transform: translate(15px, -8px);
+}
+
+.auth-modal-input-error-text {
+  color: rgb(255, 90, 90);
+  font-size: 10px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.auth-modal-input-show {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 10px;
+  font-weight: 700;
+  color: rgb(204, 204, 204);
+  padding: 3.2px;
+  cursor: pointer;
+}
+
+.auth-modal-input-show:hover {
+  color: rgb(155, 155, 155);
+}
+
+.auth-modal-gender-row {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-modal-gender-text {
+  font-weight: 500;
+}
+
+.auth-modal-gender-radios {
+  display: flex;
+}
+
+.auth-modal-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-left: 12px;
+}
+
+.auth-modal-radio-input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+
+.auth-modal-radio-mask {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 50%;
+  position: relative;
+}
+
+.auth-modal-radio-mask::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: transform 100ms ease 0s;
+  transform: scale(0);
+}
+
+.auth-modal-radio-input:checked + .auth-modal-radio-mask {
+  border: 2px solid black
+}
+
+.auth-modal-radio-input:checked + .auth-modal-radio-mask::after {
+  transform: scale(1);
+}
+
+.auth-modal-radio-text {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.auth-modal-subscribe-to-newsletter {
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.auth-modal-subscribe-to-newsletter-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.auth-modal-subscribe-to-newsletter-mask {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  transition: border-color 100ms ease 0s, background-color 200ms ease 0s;
+}
+
+.auth-modal-subscribe-to-newsletter-checkbox:checked + .auth-modal-subscribe-to-newsletter-mask {
+  background-color: black;
+  border-color: black;
+}
+
+.auth-modal-subscribe-to-newsletter-mask-tick {
+  height: 16px;
+  width: 16px;
+  fill: white;
+  opacity: 0;
+  transition: opacity 100ms ease 0s, transform 300ms ease 0s;
+}
+
+.auth-modal-subscribe-to-newsletter-checkbox:checked ~ .auth-modal-subscribe-to-newsletter-mask .auth-modal-subscribe-to-newsletter-mask-tick {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+.auth-modal-subscribe-to-newsletter-text {
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+
+.auth-modal-turnstile-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-modal-sign-up-btn-wrapper {
+  width: fit-content;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-modal-sign-up-btn {
+  box-sizing: border-box;
+  width: 260px;
+  text-align: center;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 16px 0;
+}
+
+.auth-modal-legal-text {
+  margin-top: 32px;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.auth-modal-legal-text-a {
+  color: inherit;
+  text-decoration: underline;
+}

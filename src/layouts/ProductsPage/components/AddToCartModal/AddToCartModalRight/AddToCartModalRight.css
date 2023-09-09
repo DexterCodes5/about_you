@@ -1,0 +1,90 @@
+.prod-modal-right-brand {
+  width: 200px;
+  height: 42px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.prod-modal-right-title {
+  margin: 12px 0;
+}
+
+.prod-modal-right-price {
+  margin-top: 32px;
+  font-size: 18px;
+}
+
+.prod-modal-right-vat {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+
+.prod-modal-right-color-row {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prod-modal-right-color-row1 {
+  font-size: 16px;
+}
+
+.prod-modal-right-color-row2 {
+  font-weight: 600;
+}
+
+.prod-modal-right-color-row-cvrn-cont {
+  display: flex;
+}
+
+.prod-modal-right-color-row-cvrn {
+  width: 22px;
+  height: 22px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prod-modal-right-color-row-cvrn-left {
+  transform: rotate(180deg);
+}
+
+.prod-modal-right-color-row-cvrn[data-disabled="true"] {
+  fill: rgb(204, 204, 204);
+}
+
+.prod-modal-color-option {
+  padding: 14px 10px !important;
+}
+
+.prod-modal-right-choose-size-btn {
+  max-width: unset;
+}
+
+.prod-modal-choose-size-dropdown {
+  box-sizing: border-box;
+  width: 320px;
+  max-height: 160px;
+}
+
+.prod-modal-right-add-to-basket {
+  width: 100%;
+}
+
+.atcmr-more-info {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.atcmr-more-info2 {
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cart-modal-right-arrow-right {
+  width: 24px;
+  height: 24px;
+}

@@ -1,13 +1,181 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Open Sans Condensed Bold';
+  src: url('./fonts/opensans-condbold-webfont.woff2') format('woff2'),
+    url('./fonts/opensans-condbold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Mark Pro";
+  src: url("./fonts/Mark-Pro.ttf");
+}
+
+:root {
+  --primary-color: blue
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Inter Fallback", sans-serif;
+  font-size: 14px;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button, input {
+  font-family: Inter, "Inter Fallback", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  outline: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ay-logo {
+  padding: 0px 5px 0px 4px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.about-logo {
+  font-family: 'Open Sans Condensed Bold';
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 4px;
+  color: white;
+  background-color: black;
+  line-height: 34px;
+  height: 34px;
+}
+
+.you-logo {
+  padding-right: 18px;
+  position: relative;
+}
+
+.circle-logo {
+  height: 12px;
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  z-index: 1;
+}
+
+.breadcrumbs {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgb(155, 155, 155);
+}
+
+.breadcrumbs>li {
+  display: inline;
+}
+
+.breadcrumb-link {
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.breadcrumbs > li:last-of-type > .breadcrumb-link {
+  font-weight: 600;
+}
+
+.breadcrumb-arrow {
+  height: 13px;
+  width: 13px;
+  fill: rgb(155, 155, 155);
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+.lock-body-scroll {
+  overflow: hidden !important;
+  width: calc(100% - 14px);
+}
+
+@media only screen and (min-width: 768px) {
+  .ay-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  .ay-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .ay-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@keyframes fadeEnter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeExit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeAndSlideEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeftEnter {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }

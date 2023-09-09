@@ -1,0 +1,236 @@
+.basket {
+  box-sizing: border-box;
+  max-width: 1920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.basket-h1 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.basket-splitview {
+  display: flex;
+  gap: calc(2.7vw + 5px);
+}
+
+.basket-section-start {
+  width: 50%;
+}
+
+.delivery-info-text {
+  padding: 7px 24px;
+  border-top: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.delivery-info-text-p {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+  line-height: 1.25rem;
+}
+
+.delivery-inner-section {
+  padding: 24px;
+}
+
+.delivery-inner-section-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-inner-section-row-p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.delivery-inner-section-row-div {
+  background-color: rgb(242, 242, 242);
+  padding: 6px 12px;
+  border-radius: 16px;
+}
+
+.basket-section-end {
+  width: 50%;
+  position: relative;
+}
+
+.basket__summary_and_vouchers {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(242, 242, 242);
+}
+
+.basket__summary {
+  padding-top: 24px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 10px 15px 0px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.basket__summary_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.basket__summary_row-p {
+  font-weight: 500;
+}
+
+.basket__summary_row-h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.basket__summary-vat {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.proceed-to-checkout {
+  padding: 10px 24px 24px;
+}
+
+.proceed-to-checkout-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: black;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.basket-payment-methods {
+  display: flex;
+  padding: 0 10px;
+  border-top: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  overflow-x: hidden;
+}
+
+.basket-payment-method {
+  padding: 16px 8px;
+  display: flex;
+}
+
+.basket-payment-method-img {
+  min-width: 44px;
+  max-width: 130px;
+  max-height: 32px;
+  width: 100%;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 4px;
+}
+
+.basket-vouchers {
+  margin-top: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.basket-vouchers-content {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+}
+
+.basket-vouchers-p {
+  margin-left: 16px;
+  color: rgb(155, 155, 155);
+  font-weight: 500;
+}
+
+.basket-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 48px;
+}
+
+.basket-empty-icon {
+  width: 300px;
+  height: 224px;
+}
+
+.basket-empty-h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.basket-empty-p {
+  margin-top: 8px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+
+.basket-empty-sign-in-btn {
+  margin-top: 24px;
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 16px 40px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .basket-section-start {
+    width: 65%;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 5px;
+    margin-bottom: 14px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 10px 15px 0px;
+  }
+
+  .basket-section-end {
+    width: 35%;
+  }
+
+  .basket__summary_and_vouchers {
+    position: static;
+  }
+
+  .basket-vouchers {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 10px 15px 0px;
+    border: 1px solid rgb(229, 229, 229);
+  }
+
+  .basket-empty {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .basket__summary-border {
+    border-bottom: 8px solid rgb(242, 242, 242);
+  }
+
+  .basket-vouchers {
+    margin: 0;
+    padding: 8px 0;
+    background-color: rgb(242, 242, 242);
+  }
+
+  .basket-vouchers-content {
+    border-bottom: 1px solid rgb(229, 229, 229);
+  }
+}

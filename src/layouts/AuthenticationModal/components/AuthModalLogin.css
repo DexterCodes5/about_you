@@ -1,0 +1,14 @@
+.auth-modal-forgot-password {
+  text-align: end;
+  margin-top: -8px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+
+.auth-modal-login-error {
+  color: rgb(255, 90, 90);
+  font-size: 12px;
+  font-weight: 500;
+  margin: 24px 0;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+.opener-body-elements {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.opener-body-element {
+  height: 38px;
+  padding: 0 0.875rem;
+  background-color: rgb(242, 242, 242);
+  border: 2px solid rgb(242, 242, 242);
+  border-radius: 2px;
+  color: rgb(155, 155, 155);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.opener-body-element-active {
+  background-color: white;
+  border-color: black;
+  color: black;
+}

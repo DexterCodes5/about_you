@@ -1,0 +1,89 @@
+.clothes-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px 0px, rgba(0, 0, 0, 0.05) 0px 2px 2px 0px, rgba(0, 0, 0, 0.02) 0px -2px 2px 0px;
+}
+
+.clothes-menu-wrapper {
+  position: relative;
+}
+
+.clothes-menu-triangle {
+  position: absolute;
+  top: 0px;
+  left: 185px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: -2px -2px 2px 0px rgba(0, 0, 0, 0.08);
+  transform: rotate(45deg);
+}
+
+.clothes-menu-wrapper2 {
+  background-color: white;
+  position: relative;
+}
+
+.clothes-sections {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clothes-menu-p {
+  color: rgb(144, 143, 143);
+  font-weight: 600;
+}
+
+.clothes-menu-ul {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.clothes-menu-ul > li {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.clothes-menu-ul2 {
+  margin-top: 1rem;
+}
+
+.clothes-menu-ul2 > li {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.clothes-menu-ul3 {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.clothes-menu-ul3 > li {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clothes-menu-ul3 > li > img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: grayscale(1);
+}

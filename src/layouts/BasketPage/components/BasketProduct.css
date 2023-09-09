@@ -1,0 +1,134 @@
+.basket-product {
+  padding-top: 24px;
+  display: flex;
+  position: relative;
+}
+
+.basket-product-img-container {
+  width: 120px;
+  height: 160px;
+  flex-shrink: 0;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket-product-img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.basket-product-description-container {
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-product-details {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.basket-product-details-brand {
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.basket-product-details-p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.basket-product-remove {
+  display: flex;
+  cursor: pointer;
+}
+
+.basket-product-close-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.basket-product-remove-text {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.basket-product-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.basket-product-price {
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.basket-product-qty {
+  position: absolute;
+  top: 24px;
+  right: 0;
+}
+
+.basket-product-qty-opener {
+  height: 32px;
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.basket-product-qty-text {
+  width: 25px;
+  text-align: center;
+}
+
+.basket-product-qty-smtrd {
+  width: 16px;
+  height: 16px;
+  opacity: 0.4;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.basket-product-qty-body {
+  position: absolute;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 15px 0px, rgba(0, 0, 0, 0.05) 0px 2px 2px 0px, rgba(0, 0, 0, 0.02) 0px -2px 2px 0px;
+  width: 60px;
+  margin-top: 5px;
+  padding: 16px 0;
+  overflow-y: scroll;
+  animation: 200ms ease-in-out 0ms 1 normal forwards running fadeEnter;
+}
+
+.basket-product-qty-body > li {
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.basket-product-qty-body > li:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+@media only screen and (min-width: 768px) {
+  .basket-product {
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,62 @@
+.section-start {
+  box-sizing: border-box;
+  padding-right: calc(2.7vw + 5px);
+  margin-top: 1.65rem;
+  width: 30%;
+}
+
+.section-clothes-link {
+  display: block;
+  padding: 6px 0;
+  color: rgb(107, 107, 107);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.section-clothes-link:hover {
+  opacity: 0.7;
+}
+
+.section-clothes-link-active {
+  color: black;
+  font-weight: 600;
+}
+
+.categories__tree {
+  padding-top: 4px;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.categories__tree>a {
+  display: block;
+  padding: 4px;
+}
+
+.categories__tree>a:hover {
+  opacity: 0.7;
+}
+
+.category-active {
+  background-color: rgb(242, 242, 242);
+  font-weight: 600;
+}
+
+.categories__childtree {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-start {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-start {
+    width: 15%;
+  }
+}

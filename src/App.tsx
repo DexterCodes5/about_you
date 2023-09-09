@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { SharedLayout } from "./layouts/SharedLayout/SharedLayout";
+import { ProductsPage } from "./layouts/ProductsPage/ProductsPage";
+import { ProductPage } from "./layouts/ProductPage/ProductPage";
+import { BasketPage } from "./layouts/BasketPage/BasketPage";
+import { AuthGuard } from "./components/AuthGuard";
+import { CheckoutLayout } from "./layouts/CheckoutLayout/CheckoutLayout";
+import { Delivery } from "./layouts/CheckoutLayout/Delivery/Delivery";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<h1>Home</h1>} />
+        <Route path="/:clothing" element={<ProductsPage />} />
+        <Route path="/p/:brand/:productId" element={<ProductPage />} />
+        <Route path="/basket" element={<BasketPage />} />
+      </Route>
+      <Route path="/checkout" element={<AuthGuard component={CheckoutLayout} />} >
+        <Route path="delivery" element={<Delivery />} />
+      </Route>
+    </Routes>
   );
 }
 

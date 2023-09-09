@@ -1,0 +1,43 @@
+.footer-usp {
+  background-color: rgb(255, 232, 153);
+  display: flex;
+}
+
+.footer-usp-a {
+  flex: 1 1 0;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-usp-img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-usp-span {
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.footer-payment-providers {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(242, 242, 242);
+}
+
+.footer-payment-providers-a {
+  padding: 1rem 0.5rem;
+}
+
+.footer-payment-providers-img {
+  box-sizing: border-box;
+  max-height: 2rem;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 3px;
+  filter: grayscale(1);
+  mix-blend-mode: darken;
+  height: 100%;
+  width: 100%;
+}
