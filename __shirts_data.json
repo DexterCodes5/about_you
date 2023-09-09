@@ -1,0 +1,52 @@
+[
+  {
+    "brand": "FC BAYERN MÜNCHEN",
+    "title": "Comfort Fit Shirt 'Alessio'",
+    "price": "107.90 BGN",
+    "color": "jade green",
+    "otherColors": ["antracite black"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "designAndCharacteristics": ["Logo print", "Lyocell", "Machine hem", "Straight hem", "Lapel collar", "Dropped shoulders", "Label embroidery", "Solid colored tiles", "Slightly falling material", "With buttons"],
+    "number": "FCB0022001000002",
+    "sleeveLength": "Short sleeve",
+    "cut": "Comfort fit",
+    "shirtCollar": "Other",
+    "material": "100% Lyocell",
+    "countryOfOrigin": "Turkey",
+    "img": [
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio.avif", 
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio2.avif", 
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio3.avif", 
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio4.avif",
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio5.avif",
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio6.avif",
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-green/comfort-fit-shirt-alessio7.avif"
+    ],
+    "productUrl": "/fc-bayern-munchen/shirt-alessio-957651"
+  },
+  {
+    "brand": "FC BAYERN MÜNCHEN",
+    "title": "Comfort Fit Shirt 'Alessio'",
+    "price": "107.90 BGN",
+    "color": "antracite black",
+    "otherColors": ["jade green"],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "designAndCharacteristics": ["Logo print", "Lyocell", "Machine hem", "Straight hem", "Lapel collar", "Dropped shoulders", "Label embroidery", "Solid colored tiles", "Slightly falling material", "With buttons"],
+    "number": "FCB0022002000001",
+    "sleeveLength": "Short sleeve",
+    "cut": "Comfort fit",
+    "shirtCollar": "Other",
+    "material": "100% Lyocell",
+    "countryOfOrigin": "Turkey",
+    "img": [
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black.avif", 
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black2.avif", 
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black3.avif", 
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black4.avif",
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black5.avif",
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black6.avif",
+      "http://localhost:5050/clothes-images/fc-bayern-munchen/comfort-fit-shirt-alessio-black/comfort-fit-shirt-alessio-black7.avif"
+    ],
+    "productUrl": "/fc-bayern-munchen/shirt-alessio-9576597"
+  }
+]
